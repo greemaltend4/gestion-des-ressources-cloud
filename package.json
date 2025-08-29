@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server/index.js",  // Démarre le serveur
     "client": "npm start --prefix client",  // Démarre le client React
-    "dev": "concurrently \"npm run start --prefix server\" \"npm run client\""  // Démarre les serveurs du client et du serveur en parallèle
+    "dev": "concurrently \"npm run start\" --prefix server \"npm run client\""  // Démarre les serveurs du client et du serveur en parallèle
   },
   "dependencies": {
     "express": "^4.17.1",
