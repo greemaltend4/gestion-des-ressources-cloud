@@ -1,0 +1,17 @@
+{
+  "name": "gestion-des-ressources-cloud",
+  "version": "1.0.0",
+  "description": "Un outil simple pour gérer et visualiser les ressources cloud d'AWS à partir d'une interface web.",
+  "main": "src/server/index.js",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently "npm start --prefix server" "npm start --prefix client""
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "concurrently": "^6.0.0"
+  }
+}
